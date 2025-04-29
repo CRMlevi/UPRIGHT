@@ -1,0 +1,84 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Header with logo and navigation -->
+<header style="background-color: #ffffff; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0, 85, 0, 0.1); font-family: 'Poppins', sans-serif;">
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <img src="https://static.wixstatic.com/media/cdaf96_e602a8e7bdb645f883596634bb5171d0~mv2.png" alt="Logo" style="height: 50px;">
+ 
+  </div>
+  <nav style="display: flex; gap: 25px;">
+    <a href="#home" style="color: #004d00; text-decoration: none; font-weight: 500; font-size: 16px;">Home</a>
+    <a href="#diensten" style="color: #004d00; text-decoration: none; font-weight: 500; font-size: 16px;">Diensten</a>
+    <a href="#contact" style="color: #004d00; text-decoration: none; font-weight: 500; font-size: 16px;">Contact</a>
+  </nav>
+</header>
+
+<!-- Contact Form -->
+<form action="https://stichtingsolversacademysuriname--levsplay.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DVF00000CocPn" method="POST" style="background: #ffffff; padding: 40px; max-width: 600px; margin: 60px auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 85, 0, 0.15); font-family: 'Poppins', sans-serif; color: #004d00;">
+
+
+  <input type="hidden" name="orgid" value="00DVF00000CocPn">
+  <input type="hidden" name="retURL" value="https://uprightlifttechniek.nl/">
+  <input type="hidden" name="campaign_id" value="701VF00000KJMkYYAX">
+
+
+  <h2 style="text-align: center; color: #004d00; margin-bottom: 30px; font-size: 28px;">Service verzoek</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div>
+      <label for="name" style="font-weight: 600; margin-bottom: 8px; display: block;">Naam</label>
+      <input id="name" name="name" type="text" maxlength="80" style="width: 100%; padding: 14px; border: 1px solid #ccc; border-radius: 12px; transition: all 0.3s; background-color: #f9f9f9;">
+    </div>
+
+    <div>
+      <label for="email" style="font-weight: 600; margin-bottom: 8px; display: block;">E-mail</label>
+      <input id="email" name="email" type="email" maxlength="80" style="width: 100%; padding: 14px; border: 1px solid #ccc; border-radius: 12px; transition: all 0.3s; background-color: #f9f9f9;">
+    </div>
+
+    <div>
+      <label for="phone" style="font-weight: 600; margin-bottom: 8px; display: block;">Telefoonnummer</label>
+      <input id="phone" name="phone" type="text" maxlength="40" style="width: 100%; padding: 14px; border: 1px solid #ccc; border-radius: 12px; transition: all 0.3s; background-color: #f9f9f9;">
+    </div>
+
+    <div>
+      <label for="subject" style="font-weight: 600; margin-bottom: 8px; display: block;">Onderwerp</label>
+      <input id="subject" name="subject" type="text" maxlength="80" style="width: 100%; padding: 14px; border: 1px solid #ccc; border-radius: 12px; transition: all 0.3s; background-color: #f9f9f9;">
+    </div>
+
+    <div>
+      <label for="description" style="font-weight: 600; margin-bottom: 8px; display: block;">Beschrijving</label>
+      <textarea id="description" name="description" style="width: 100%; height: 140px; padding: 14px; border: 1px solid #ccc; border-radius: 12px; transition: all 0.3s; background-color: #f9f9f9;"></textarea>
+    </div>
+
+    <input type="submit" value="Verzenden" style="background: linear-gradient(135deg, #006600, #004d00); color: #ffffff; padding: 16px; border: none; border-radius: 12px; font-size: 18px; font-weight: 600; cursor: pointer; transition: background 0.3s, transform 0.3s;">
+  </div>
+
+</form>
+
+<style>
+  /* Extra form effects */
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    outline: none;
+  }
+
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border-color: #006600;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 85, 0, 0.3);
+  }
+
+  form input[type="submit"]:hover {
+    background: linear-gradient(135deg, #004d00, #002200);
+    transform: translateY(-2px);
+  }
+
+  /* Navigation hover */
+  nav a:hover {
+    color: #006600;
+    text-decoration: underline;
+  }
+</style>
